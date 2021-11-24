@@ -4520,8 +4520,9 @@ input:-webkit-autofill,input:-webkit-autofill:active,input:-webkit-autofill:focu
     display:none
   }
 }
-@media (min-width:767px){
+@media (max-width:1200px){
   .hidden-computer{
+    padding-left: 4rem;
     display:none
   }
 }
