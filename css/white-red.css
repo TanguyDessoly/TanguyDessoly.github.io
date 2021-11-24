@@ -13347,7 +13347,7 @@ abbr[title]:after {
   }
 }
 .hidden-computer {
-  margin-top: 2rem;
-  margin-left: 4rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
   padding-left: -2rem;
 }
