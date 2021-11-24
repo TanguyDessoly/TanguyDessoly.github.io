@@ -61,7 +61,7 @@ body {
  background-color:#1b1b1b
 }
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 14px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -71,7 +71,7 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #7e0001; 
-  border-radius: 5px;
+  border-radius: 3px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
@@ -10297,15 +10297,15 @@ input:-webkit-autofill:hover {
 }
 }
 .sections-nav-in .content {
- -webkit-transform:translate(calc(-100% + 15px));
- -ms-transform:translate(calc(-100% + 15px));
- transform:translate(calc(-100% + 15px))
+ -webkit-transform:translate(calc(-101% + 15px));
+ -ms-transform:translate(calc(-101% + 15px));
+ transform:translate(calc(-101% + 15px))
 }
 @media (min-width:576px) {
  .sections-nav-in .content {
-  -webkit-transform:translate(calc(-100% + 30px));
-  -ms-transform:translate(calc(-100% + 30px));
-  transform:translate(calc(-100% + 30px))
+  -webkit-transform:translate(calc(-101% + 30px));
+  -ms-transform:translate(calc(-101% + 30px));
+  transform:translate(calc(-101% + 30px))
 }
 }
 @media (min-width:768px) {
@@ -12242,7 +12242,7 @@ to {
  display:none;
  float:left;
  width:100%;
- margin-right:-100%;
+ margin-right:-101%;
  -webkit-backface-visibility:hidden;
  backface-visibility:hidden;
  -webkit-transition:-webkit-transform .6s ease-in-out;
@@ -12269,9 +12269,9 @@ to {
 }
 .active.carousel-item-left,
 .carousel-item-prev:not(.carousel-item-right) {
- -webkit-transform:translateX(-100%);
- -ms-transform:translateX(-100%);
- transform:translateX(-100%)
+ -webkit-transform:translateX(-101%);
+ -ms-transform:translateX(-101%);
+ transform:translateX(-101%)
 }
 .carousel-fade .carousel-item {
  opacity:0;
@@ -12547,7 +12547,7 @@ to {
  -webkit-justify-content:space-between;
  -ms-flex-pack:justify;
  justify-content:space-between;
- min-height:100vh;
+ min-height:50vh;
  overflow:hidden
 }
 .section-sub-header {
@@ -12765,9 +12765,9 @@ to {
  top:0
 }
 .timeline-animated .timeline-item {
- -webkit-transform:translate(-100%);
- -ms-transform:translate(-100%);
- transform:translate(-100%)
+ -webkit-transform:translate(-101%);
+ -ms-transform:translate(-101%);
+ transform:translate(-101%)
 }
 .timeline-animated .timeline-item:before {
  -webkit-transform:scaleY(0);
@@ -12984,8 +12984,8 @@ to {
 }
 @-webkit-keyframes timeline-item {
  0% {
-  -webkit-transform:translate(-100%);
-  transform:translate(-100%)
+  -webkit-transform:translate(-101%);
+  transform:translate(-101%)
 }
 to {
   -webkit-transform:translate(0);
@@ -12994,8 +12994,8 @@ to {
 }
 @keyframes timeline-item {
  0% {
-  -webkit-transform:translate(-100%);
-  transform:translate(-100%)
+  -webkit-transform:translate(-101%);
+  transform:translate(-101%)
 }
 to {
   -webkit-transform:translate(0);
@@ -13124,9 +13124,9 @@ max-width: 50%!important;
  overflow:hidden
 }
 .animation-translate {
- -webkit-transform:translate(-100%);
- -ms-transform:translate(-100%);
- transform:translate(-100%)
+ -webkit-transform:translate(-101%);
+ -ms-transform:translate(-101%);
+ transform:translate(-101%)
 }
 .animation-translate-overline {
  position:relative;
@@ -13176,8 +13176,8 @@ max-width: 50%!important;
 }
 @-webkit-keyframes animation-translate {
  0% {
-  -webkit-transform:translate(-100%);
-  transform:translate(-100%)
+  -webkit-transform:translate(-101%);
+  transform:translate(-101%)
 }
 to {
   -webkit-transform:translate(0);
@@ -13186,8 +13186,8 @@ to {
 }
 @keyframes animation-translate {
  0% {
-  -webkit-transform:translate(-100%);
-  transform:translate(-100%)
+  -webkit-transform:translate(-101%);
+  transform:translate(-101%)
 }
 to {
   -webkit-transform:translate(0);
@@ -13200,8 +13200,8 @@ to {
   transform:translate(0)
 }
 to {
-  -webkit-transform:translate(-100%);
-  transform:translate(-100%)
+  -webkit-transform:translate(-101%);
+  transform:translate(-101%)
 }
 }
 @keyframes animation-translate-overline {
@@ -13210,8 +13210,8 @@ to {
   transform:translate(0)
 }
 to {
-  -webkit-transform:translate(-100%);
-  transform:translate(-100%)
+  -webkit-transform:translate(-101%);
+  transform:translate(-101%)
 }
 }
 .error {
@@ -13336,9 +13336,18 @@ abbr[title]:after {
     color:inherit
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .hidden-mobile {
   display: none;
   }
 }
-
+@media (min-width: 1200px) {
+  .hidden-computer {
+  display: none;
+  }
+}
+.hidden-computer {
+  margin-top: 2rem;
+  margin-left: 4rem;
+  padding-left: -2rem;
+}
