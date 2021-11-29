@@ -9665,7 +9665,13 @@ input:-webkit-autofill:hover {
  border-top-right-radius:0
 }
 .nav-pills .nav-link {
+  margin-right: 0.25rem;
  border-radius:.375rem
+}
+.nav-pills .nav-link:hover {
+ -webkit-transition:background-color .15s ease-in;
+ transition:background-color .15s ease-in;
+ background-color: hsla(0,0%,85%,.2);
 }
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
@@ -13350,4 +13356,7 @@ abbr[title]:after {
   margin-bottom: 1rem;
   margin-left: 2rem;
   padding-left: -2rem;
+}
+p a{
+  color: hsla(0,0%,100%,.6);
 }
