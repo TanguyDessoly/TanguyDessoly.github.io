@@ -14425,6 +14425,7 @@ var Popper = function () {
     };
 
     _proto.cycle = function cycle(event) {
+		return false
       if (!event) {
         this._isPaused = false;
       }
@@ -18368,3 +18369,4 @@ $(function () {
           });
         }, false);
       })();
+

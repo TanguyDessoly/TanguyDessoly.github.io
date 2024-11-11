@@ -2268,7 +2268,8 @@ button.bg-danger:hover {
  overflow:hidden;
  clip:rect(0,0,0,0);
  white-space:nowrap;
- border:0
+ border:0;
+ cursor:pointer
 }
 .sr-only-focusable:active,
 .sr-only-focusable:focus {
@@ -7449,7 +7450,7 @@ a.close.disabled {
  padding-right:30px;
  padding-left:30px;
  margin-right:auto;
- margin-left:150px
+ margin-left:auto
 }
 @media (min-width:1740px) {
  .container-fluid-limited {
@@ -10689,7 +10690,8 @@ to {
  -webkit-flex-shrink:0;
  -ms-flex-negative:0;
  flex-shrink:0;
- width:100%
+ max-width:950px;
+ max-height:200px
 }
 .card-img,
 .card-img-top {
@@ -11925,7 +11927,7 @@ to {
 }
 @media (min-width:1740px) {
  .modal-fluid {
-  max-width:1680px
+  max-width:100% !important
 }
 }
 .tooltip {
@@ -12251,10 +12253,17 @@ to {
  margin-right:-101%;
  -webkit-backface-visibility:hidden;
  backface-visibility:hidden;
- -webkit-transition:-webkit-transform .6s ease-in-out;
+ /* -webkit-transition:-webkit-transform .6s ease-in-out;
  transition:-webkit-transform .6s ease-in-out;
  transition:transform .6s ease-in-out;
- transition:transform .6s ease-in-out,-webkit-transform .6s ease-in-out
+ transition:transform .6s ease-in-out,-webkit-transform .6s ease-in-out */
+}
+@media (max-width: 576px) {
+  .carousel-item {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transition: transform 0.5s ease;
+  }
 }
 @media (prefers-reduced-motion:reduce) {
  .carousel-item {
