@@ -5,16 +5,10 @@ import { useState } from 'react';
 
 function App() {
 
-  const [datas, setDatas] = useState([])
-
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        </p>
-      </header>
+      Work in progress.
     </div>
   );
 }
